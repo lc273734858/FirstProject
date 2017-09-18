@@ -1,0 +1,36 @@
+﻿//如果是.Net版本请将所有注释删除，低版本的Json不支持注释
+{
+  "RegistCenterAdress": "192.168.134.192:2181",
+  "Services": [
+    {
+      "ServiceName": "Test.NetCoreServer.HelloService", //如果不配置此名称，默认使用ServiceContract接口名称，此名称用于客户端查找服务
+      "ServiceContract": "Test.NetCoreServer.HelloService,Test.NetCoreServer", //如果ServiceName没有配置，自动使用Test.NetCoreServer.HelloService作为服务名称
+      "ServiceImpl": "Test.NetCoreServer.BusinessImpl,Test.NetCoreServer",//服务实现
+      //"Adress": "127.0.0.1", 如果服务器存在多网卡，建议手动指定IP，否则会自动寻找一个IP
+      //"Port": 2222, 如果未指定端口，会自动生成端口
+      "Weight": 1,//初始权重，不配置，默认为1
+      "Version": "1.0", //当客户端不指定版本时，会将所有Status=0的服务作为可调用服务器
+      "Status": "0" //0-正式版 1-测试
+    },
+    {
+      "ServiceName": "Test.NetCoreServer.HelloService",
+      "ServiceContract": "Test.NetCoreServer.HelloService,Test.NetCoreServer",
+      "ServiceImpl": "Test.NetCoreServer.BusinessImpl,Test.NetCoreServer",
+      "Port": 2221,
+      "Weight": 1,
+      "Version": "1.1",
+      "Status": "1"
+    }
+  ]
+}
+//客户端，
+//{
+//  "RegistCenterAdress": "192.168.134.192:2181",
+////  "ConsumerHost": "127.0.0.1", // 如果服务器存在多网卡，建议手动指定IP，否则会自动寻找一个IP
+//  "RefrenceServices": [
+//    {
+//      "ServiceName": "Test.Server.HelloService",//服务的名称
+//      "Version": "1.0"//版本号
+//    }
+//  ]
+//}

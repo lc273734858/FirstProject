@@ -1,0 +1,39 @@
+[2017-08-24 06:25:27.279 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 15246ms for sessionid 0x15d817b9dfb01d3] 	
+[2017-08-24 06:25:28.950 GMT 	WARNING 	ClientCnxn 	Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01d3 has expired] 	
+[2017-08-24 06:25:28.958 GMT 	WARNING 	ClientCnxn 	!!!Session 0x15d817b9dfb01d3 for server {192.168.134.192:2181}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: org.apache.zookeeper.ClientCnxn+SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01d3 has expired
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   在 org.apache.zookeeper.ClientCnxn.<startSendTask>d__60.MoveNext()
+[2017-08-24 06:26:49.109 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 73409ms for sessionid 0x15d817b9dfb01da] 	
+[2017-08-24 06:26:51.098 GMT 	WARNING 	ClientCnxn 	Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01da has expired] 	
+[2017-08-24 06:26:51.098 GMT 	WARNING 	ClientCnxn 	!!!Session 0x15d817b9dfb01da for server {192.168.134.192:2181}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: org.apache.zookeeper.ClientCnxn+SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01da has expired
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   在 org.apache.zookeeper.ClientCnxn.<startSendTask>d__60.MoveNext()
+[2017-08-24 06:33:04.030 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 6676ms for sessionid 0x15d817b9dfb01db] 	
+[2017-08-24 06:38:19.710 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 6666ms for sessionid 0x15d817b9dfb01db] 	
+[2017-08-24 06:38:35.018 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 6677ms for sessionid 0x15d817b9dfb01db] 	
+[2017-08-24 06:38:45.127 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 10001ms for sessionid 0x15d817b9dfb01db] 	
+[2017-08-24 06:38:55.628 GMT 	WARNING 	ClientCnxn 	Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01db has expired] 	
+[2017-08-24 06:38:55.628 GMT 	WARNING 	ClientCnxn 	!!!Session 0x15d817b9dfb01db for server {192.168.134.192:2181}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: org.apache.zookeeper.ClientCnxn+SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01db has expired
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   在 org.apache.zookeeper.ClientCnxn.<startSendTask>d__60.MoveNext()
+[2017-08-24 06:39:22.494 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 10144ms for sessionid 0x15d817b9dfb01ef] 	
+[2017-08-24 06:41:43.876 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 10608ms for sessionid 0x15d817b9dfb01ef] 	
+[2017-08-24 06:41:45.717 GMT 	WARNING 	ClientCnxn 	Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01ef has expired] 	
+[2017-08-24 06:41:45.718 GMT 	WARNING 	ClientCnxn 	!!!Session 0x15d817b9dfb01ef for server {192.168.134.192:2181}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: org.apache.zookeeper.ClientCnxn+SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01ef has expired
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   在 org.apache.zookeeper.ClientCnxn.<startSendTask>d__60.MoveNext()
+[2017-08-24 06:42:04.511 GMT 	WARNING 	ClientCnxn 	Client session timed out, have not heard from server in 12085ms for sessionid 0x15d817b9dfb01f5] 	
+[2017-08-24 06:43:04.667 GMT 	WARNING 	ClientCnxn 	Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01f5 has expired] 	
+[2017-08-24 06:43:04.667 GMT 	WARNING 	ClientCnxn 	!!!Session 0x15d817b9dfb01f5 for server {192.168.134.192:2181}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: org.apache.zookeeper.ClientCnxn+SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x15d817b9dfb01f5 has expired
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 Microsoft.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccess(Task task)
+   在 org.apache.zookeeper.ClientCnxn.<startSendTask>d__60.MoveNext()

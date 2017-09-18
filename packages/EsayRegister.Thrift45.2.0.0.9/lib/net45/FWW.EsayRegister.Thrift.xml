@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FWW.EsayRegister.Thrift</name>
+    </assembly>
+    <members>
+        <member name="M:FWW.EsayRegister.Thrift.EsayService.GenerateService(FWW.EsayRegister.Common.ServiceConfig[])">
+            <summary>
+            生成服务
+            </summary>
+            <param name="dic"></param>
+        </member>
+        <member name="M:FWW.EsayRegister.Thrift.EsayService.GenerateProcessor(FWW.EsayRegister.Common.ServiceConfig)">
+            <summary>
+            生成服务实现
+            </summary>
+            <param name="config"></param>
+            <param name="assemblypath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Thrift.ServiceFactory.FindService``1(System.String)">
+            <summary>
+            查找服务
+            </summary>
+            <typeparam name="ClientType">客户端类型</typeparam>
+            <param name="servicename">服务名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Thrift.ServiceFactory.BuildService``1(FWW.EsayRegister.Common.ServiceConfig)">
+            <summary>
+            生成服务
+            </summary>
+            <typeparam name="ClientType"></typeparam>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Thrift.ServiceFactory.FindService``2">
+            <summary>
+            查找服务
+            </summary>
+            <typeparam name="ClientType">客户端类型</typeparam>
+            <typeparam name="TService">要查找的服务名称，会使用类型的FullName查找服务</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Thrift.ServiceFactory.FindBalanceServiceAdress(System.String)">
+            <summary>
+            负载均衡查找服务地址
+            </summary>
+            <param name="servicename"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

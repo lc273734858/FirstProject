@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FWW.EsayRegister.Common</name>
+    </assembly>
+    <members>
+        <member name="M:FWW.EsayRegister.Common.BalanceMethod.NextServer``1(``0[])">
+            <summary>
+            加权轮询
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.ConsumerProxy.ResetMemory(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)">
+            <summary>
+            更新缓存
+            </summary>
+            <param name="childrens"></param>
+            <param name="serviceContract"></param>
+            <param name="version"></param>
+        </member>
+        <member name="F:FWW.EsayRegister.Common.ConsumerProxy.AddService">
+            <summary>
+            增加服务
+            </summary>
+        </member>
+        <member name="F:FWW.EsayRegister.Common.ConsumerProxy.RemoveService">
+            <summary>
+            移除服务
+            </summary>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.ConsumerProxy.SetRealData">
+            <summary>
+            瞬间切换字典
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.EsayRegisterConfig.ConsumerHost">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.EsayRegisterConfig.MaxPool">
+            <summary>
+            线程池最大数量
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.EsayRegisterConfig.WaitFindServiceTime">
+            <summary>
+            查找服务超时时间,单位秒
+            </summary>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.EsayRegisterConfig.#ctor">
+            <summary>
+            默认构造器，初始化线程池数量100
+            </summary>
+        </member>
+        <member name="F:FWW.EsayRegister.Common.EsayRegisterConfig.WhenConfigChange">
+            <summary>
+            当文件发生改变时
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.IBalance.Weight">
+            <summary>
+            初始权重
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.IBalance.Current">
+            <summary>
+            当前权重
+            </summary>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.IsUsedIPEndPoint(System.Int32)">
+             
+            判断指定的网络端点（只判断端口）是否被使用  
+             
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.IsUsedIPEndPoint(System.String,System.Int32)">
+             
+            判断指定的网络端点（判断IP和端口）是否被使用
+             
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.GetUnusedPort(System.Int32)">
+            
+             返回可用端口号
+            
+             端口开始数字
+            
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.GetLocalIPs">
+            <summary>
+            获取本地IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.IsAddressOfGateway(System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            获取网关地址
+            </summary>
+            <param name="address"></param>
+            <param name="gateway"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.IsAddressOfGateway(System.Byte[],System.Byte[])">
+            <summary>
+            是否是网关地址
+            </summary>
+            <param name="address"></param>
+            <param name="gateway"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.IPHelper.FindGetGatewayAddress">
+            <summary>
+            获取网关地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.RegistCenter.RegistService(FWW.EsayRegister.Common.ServiceConfig)">
+            <summary>
+            注册服务
+            </summary>
+            <param name="serviceName"></param>
+            <param name="serviceAdress"></param>
+            <param name="servicegroup"></param>
+            <param name="weight"></param>
+            <param name="version"></param>
+            <param name="status">状态0-未上线/测试 1-正常</param>
+            <param name="serviceType"></param>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.RegistCenter.CheckAndCreateEphemeral(System.String,System.String)">
+            <summary>
+            检查临时节点是否存在，如果存在判断是否跟当前Sessionid一致，不一致删除重新创建
+            </summary>
+            <param name="path"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.RegistCenter.GetServiceProviderNode(System.String)">
+            <summary>
+            获取服务提供者节点zookeeper路径
+            </summary>
+            <param name="servicename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.RegistCenter.RegistConsumer(FWW.EsayRegister.Common.EsayRegisterConfig)">
+            <summary>
+            注册消费者
+            </summary>
+            <param name="serviceName"></param>
+            <param name="consumerAdress"></param>
+            <param name="version"></param>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.RegistCenter.ExistService(System.String)">
+            <summary>
+            是否存在服务
+            </summary>
+            <param name="serviceName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.ServiceContract">
+            <summary>
+            服务接口
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.ServiceImpl">
+            <summary>
+            服务实现
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.Adress">
+            <summary>
+            服务地址
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.Port">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.Weight">
+            <summary>
+            初始权重
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.Current">
+            <summary>
+            当前权重
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.GroupName">
+            <summary>
+            组名称
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.Version">
+            <summary>
+            /版本号
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.Status">
+            <summary>
+            状态0-正常 1-测试
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfig.ServiceType">
+            <summary>
+            服务类型（grpc/http）
+            </summary>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.ServiceConfig.AutoServiceName">
+            <summary>
+            如果没有配置服务名称，根据ContractName自动生成服务名
+            </summary>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.ServiceConfig.GenerateRegistInfo">
+            <summary>
+            生成注册信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.ServiceConfig.#ctor(System.String)">
+            <summary>
+            按照Adress, GroupName, Weight, Version, Status,ServiceType的顺序解析字符串
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:FWW.EsayRegister.Common.ServiceConfigCollection">
+            <summary>
+            服务配置集合
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfigCollection.ServiceName">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfigCollection.configs">
+            <summary>
+            服务集合
+            </summary>
+        </member>
+        <member name="P:FWW.EsayRegister.Common.ServiceConfigCollection.Servicetype">
+            <summary>
+            服务类型
+            </summary>
+        </member>
+        <member name="F:FWW.EsayRegister.Common.Setting.CONFIGBASEDIR">
+            <summary>
+            配置文件路径
+            </summary>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.Unit.ReTry(System.Action,System.Int32,System.Int32)">
+            <summary>
+            方法重试
+            </summary>
+            <param name="action"></param>
+            <param name="times">重试次数</param>
+            <param name="intervaltime">重试间隔时间</param>
+        </member>
+        <member name="M:FWW.EsayRegister.Common.Unit.GenerateCacheKey(FWW.EsayRegister.Common.ServiceConfig)">
+            <summary>
+            生成缓存Key
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

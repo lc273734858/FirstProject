@@ -1,0 +1,8 @@
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\bin\Debug\EsayRegisterDemo.Contract.dll
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\bin\Debug\EsayRegisterDemo.Contract.pdb
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\bin\Debug\Thrift.dll
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\bin\Debug\Thrift.pdb
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\obj\Debug\EsayRegisterDemo.Contract.csproj.CoreCompileInputs.cache
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\obj\Debug\EsayRegisterDemo.Contract.dll
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\obj\Debug\EsayRegisterDemo.Contract.pdb
+F:\workfolder\test\EsayRegisterDemo\EsayRegisterDemo.Contract\obj\Debug\EsayRegisterDemo.Contract.csprojResolveAssemblyReference.cache
